@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Recados motivacionais</title> 
+          <link rel="stylesheet" href="index.css">
+     </head> <body id="cor"> <header> 
+        <h1> Bem Vindo a página de recadinhos! </h1>
+         <p> Encontre recados motivacionais conforme sua necessidade </p>
+         </header> 
+         <div class="buttons"> 
+            <button class="butons" onclick="mudarGrade()">Visualização grade</buttons>
+            <button class="butons" onclick="mudarLista()">Visualização lista</buttons>
+            <button class="butons" onclick="mudarCor()">Mudar cores</button> 
+        </div> 
+        <h2> Recadinhos principais: </h2> 
+        <main id="principal"> 
+        <section class="recados"> 
+            <br>
+            <img src="/imagens/mae.png"  width="30%" alt="">
+        <p>Recado para as mães</p> 
+        </div> 
+        <br>
+        <div class="recados"> 
+            <img src="mulher.png" width="35%" alt=""> 
+            <p>Recado para as mulheres</p> </div> 
+            <br>
+            <div class="recados"> 
+                <img src="todos.png"  width="175%" alt=""> 
+                <p>Recado para todos</p> 
+            </div> 
+        </section>
+        <section class="recados"> 
+            <h2>Recomendações</h2> 
+            <ul> 
+                <li>
+                    <a href="https://www.youtube.com/@e.duardasil" target="_blank">Canal de rotina</a>
+                </li> 
+                <br> 
+                <li>
+                    <a href="https://www.youtube.com/@chloelizi" target="_blank">Vídeos de vlog no japão</a>
+                </li> 
+                <br> 
+                <li>
+                    <a href="https://www.youtube.com/@AestheticGirls" target="_blank">Dicas de beleza</a>
+                </li> 
+                <br> 
+                <li>
+                    <a href="https://www.youtube.com/@LofiGirl" target="_blank">Para estudar</a>
+                </li> 
+            </ul> 
+        </section> 
+        <section class="recados"> 
+            <h2>Minhas redes</h2> 
+            <ul> 
+                <li>
+                    <a href="https://br.pinterest.com/Nana_PA2009/" target="_blank">Pinterest</a>
+                </li> 
+                <br> 
+                <li>
+                    <a href="https://www.tumblr.com/dumblr" target="_blank">tumblr</a>
+                </li> 
+                <br> 
+                <li>
+                    <a href="https://www.instagram.com/my_.life._rp/" target="_blank">Instagram</a>
+                </li> 
+                <br> 
+            </ul>
+         </section> 
+         <section class="recados2">
+            <div>
+                <img src="arvore.png" width="35%" alt="">
+                <p>Imagem de uma árvore no Senai de Piracicaba</p>
+            </div>
+            <div>
+                <img src="lugar.png" width="35%" alt="">
+                <p>Imagem do "Spazio" em Piracicaba</p>
+            </div>
+            <div>
+                <img src="vista.png" width="35%" alt="">
+                <p>Imagem de uma vista de Piracicaba</p>
+            </div>
+        </section>
+        <a href="maes.html" target="_blank"> 
+            <button class="butons">Recadinhos para mães</button> 
+        </a> 
+        <a href="mulheres.html" target="_blank"> 
+            <button class="butons" >Recadinhos para mulheres</button> 
+        </a> 
+        <a href="homens.html" target="_blank"> 
+            <button class="butons" >Recadinhos para homens</button> 
+        </a> 
+        <a href="idoso.html" target="_blank"> 
+            <button class="butons" >Recadinhos para idosos</button> 
+        </a> 
+    </main> 
+    <footer> 
+        &copy; Riana 2025 🦩 
+    </footer> 
+</body> 
+<script> 
+function mudarGrade() { const principal = document.getElementById('principal') 
+principal.classList.add('modo-grade') } 
+function mudarLista() { const principal = document.getElementById('principal') 
+principal.classList.remove('modo-grade') } 
+function mudarCor() { const principal = document.getElementById('cor') 
+principal.classList.toggle('modo-cor') } 
+</script> 
+</html>

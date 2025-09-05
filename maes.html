@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Recados para mães</title> 
+          <link rel="stylesheet" href="mae.css">
+     </head> 
+     <body id="cor"> 
+        <header> 
+        <h1> Essa é a página de recados para as mães! </h1>
+         </header> 
+         <div class="buttons"> 
+            <button class="butons" onclick="mudarGrade()">Visualização grade</buttons>
+            <button class="butons" onclick="mudarLista()">Visualização lista</buttons>
+            <button class="butons" onclick="mudarCor()">Mudar cores</button> 
+        </div>  
+        <main id="principal"> 
+        <section class="recados"> 
+            <br>
+            <img src="mae1.jpg"  width="30%" alt="">
+        <p>❤️</p> 
+        </div> 
+        <br>
+        <div class="recados"> 
+            <img src="mae2.jpg" width="130%" alt=""> 
+            <p>❤️</p> </div> 
+            <br>
+            <div class="recados"> 
+                <img src="mae3.png"  width="30%" alt=""> 
+                <p>❤️</p> 
+            </div> 
+        </section>
+        <h2>Adicione sua imagem</h2>
+        <section>
+            <button class="butons">+</button> 
+        </section>
+    </main> 
+    <footer> 
+        &copy; Riana 2025 🦩 
+    </footer> 
+</body> 
+<script> 
+function mudarGrade() { const principal = document.getElementById('principal') 
+principal.classList.add('modo-grade') } 
+function mudarLista() { const principal = document.getElementById('principal') 
+principal.classList.remove('modo-grade') } 
+function mudarCor() { const principal = document.getElementById('cor') 
+principal.classList.toggle('modo-cor') } 
+</script> 
+</html>
